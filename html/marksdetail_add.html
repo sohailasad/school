@@ -1,0 +1,31 @@
+<form action="" method="post" enctype="multipart/form-data">
+<table>
+<tr><td>Roll No</td><td><input type="text" name="rollno" id="rollno"></td></tr>
+<tr><td>
+<label>Class ID</label></td>
+<td>
+<select name="classID">
+<option>Class Name</option>
+<?php
+echo $class;
+?>
+</select>
+</td></tr>
+<tr><td>
+<label>Subject ID</label></td>
+<td>
+<select name="subjectID">
+<option>Subject Name</option>
+<?php
+echo $subject;
+ ?>
+</select>
+</td></tr>
+<tr><td>
+<label>Total Marks</label></td><td><input type="text" name="totalmarks" id="totalmarks"></td></tr>
+<tr><td>
+<label>Obtain Marks</label></td><td><input type="text" name="obtainmarks" id="obtainmarks"></td></tr>
+<tr><td></td><td>
+<input type="submit" name="marksdetail" value="Save">
+</td></tr></table>
+</form>

@@ -1,0 +1,27 @@
+<div style="float: left;">
+    <form action="" method="post" enctype="multipart/form-data">
+    <table border="0">
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="emaail"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="login" value="login" id="button"></td>
+        </tr>
+    </table>
+</form>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button" ).click(function() {
+            $("#message").fadeIn(3000);
+        });	
+    });
+</script>

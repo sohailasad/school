@@ -1,0 +1,16 @@
+
+<form action="" method="post" enctype="multipart/form-data">
+<table><tr><td>
+<label>Marks ID</label></td><td><input type="text" name="maksid" id="maksid" value="<?php echo $row['id']; ?>"></td></tr>
+<tr><td>
+<label>Rollno</label></td><td><input type="text" name="rollno" id="rollno" value="<?php echo $row['roll_no']; ?>"></td></tr>
+<tr><td>
+<label>ClassID</label></td><td><input type="text" name="classid" id="classid" value="<?php echo $row['class_id']; ?>"></td></tr>
+<tr><td>
+<label>Total Marks</label></td><td><input type="text" name="totalmarks" id="totalmarks" value="<?php echo $row['total_marks']; ?>"></td></tr>
+<tr><td>
+<label>Obtain Marks</label></td><td><input type="text" name="obtnmarks" id="obtnmarks" value="<?php echo $row['obtain_marks']; ?>"></td></tr>
+<tr><td></td><td>
+<input type="submit" name="updtmark" value="update">
+</td></tr></table>
+</form>

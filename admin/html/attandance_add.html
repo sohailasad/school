@@ -1,0 +1,40 @@
+<div style="float: left;">
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr><td>Roll No</td><td><input type="text" name="rollno" id="rollno"></td></tr>
+            <tr><td>
+                    <label>Class ID</label></td>
+                <td>
+                    <select name="classID">
+                        <option>Class Name</option>
+                        <?php
+                        echo $class;
+                        ?>
+                    </select>
+                </td></tr>
+            <tr><td>
+                    <label>Date:</label></td><td><input type="text" name="hasDatepicker" id="datepicker"></td></tr>
+            <tr><td>Status</td>
+                <td>
+                    <select name="status">
+                        <option>Present</option>
+                        <option>Absent</option>
+                        <option>Leave</option>
+                    </select>
+                </td></tr>
+            <tr><td></td><td>
+                    <input type="submit" name="attendanc" value="Save">
+                </td></tr></table>
+    </form>
+</div>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+
+    $(function() {
+        $( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+    });
+</script>

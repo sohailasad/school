@@ -1,0 +1,28 @@
+<div style="float: left;">
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr><td>
+                    <label>Class ID</label></td>
+                <td>
+                    <select name="classID">
+                        <option>Class Name</option>
+                        <?php
+                        echo $class;
+                        ?>
+                    </select>
+                </td></tr>
+            <tr><td>
+                    <label>Subject ID</label></td>
+                <td>
+                    <select name="SubjectID">
+                        <option>Subject Name</option>
+                        <?php
+                        echo $subject;
+                        ?>
+                    </select>
+                </td></tr>
+            <tr><td></td><td>
+                    <input type="submit" name="classsubject" value="Save">
+                </td></tr></table>
+    </form>
+</div>
