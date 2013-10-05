@@ -1,8 +1,9 @@
 <?php
-
+include "include/connection.php";
 session_start();
+
 if (isset($_SESSION['name'])) {
-    include "include/connection.php";
+    
     $query = "select * from student";
     $result = mysql_query($query);
     $data = "";

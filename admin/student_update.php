@@ -1,6 +1,7 @@
 <?php
 include "include/connection.php";
 session_start();
+if (isset($_SESSION['name'])) {
 $query=mysql_query("select * from student where id=".$_GET['id']."");
 $row=mysql_fetch_array($query);
 
@@ -17,6 +18,11 @@ if($query){
 		echo "some error not update recored";
 		}
 }
-
+} else {
+    header('Location:index.php');
+}
+include "layout/header.php";
 include "html/student_update.html";
+include "layout/rightside.php";
+include "layout/footer.php";
 ?>

@@ -1,6 +1,7 @@
 <?php
 include "include/connection.php";
 session_start();
+if (isset($_SESSION['name'])) {
 $query=mysql_query("select * from marks where id=".$_GET['id']."");
 $row=mysql_fetch_array($query);
 if(isset($_POST['updtmark'])){
@@ -15,5 +16,11 @@ header('location:marks_show.php');
 exit;	
 }
 }
+} else {
+    header('Location:index.php');
+}
+include "layout/header.php";
 include "html/marks_update.html";
+include "layout/rightside.php";
+include "layout/footer.php";
 ?>

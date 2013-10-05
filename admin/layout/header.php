@@ -28,9 +28,7 @@
                   <div id="img3">
                     <ul>
                        <li><a href="student_show.php">Students</a></li>
-                       <li><a href="attendance_show.php">Attendance</a></li>
                        <li><a href="class_show.php">Class</a></li>
-                       <li><a href="classsubject_show.php">Class Subjects</a></li>
                        <li><a href="subject_show.php">Subjects</a></li>
                        <li><a href="marks_show.php">Marks</a></li>
                        <li><a href="marksdetail_show.php">Marks Detail</a></li>

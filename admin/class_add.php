@@ -1,6 +1,7 @@
 <?php
 include "include/connection.php";
 session_start();
+if (isset($_SESSION['name'])) {
 if(isset($_POST['cls'])){
 	$class=$_POST['class'];
 	
@@ -22,6 +23,9 @@ if(isset($_POST['cls'])){
 		}
 	
 	}
+        } else {
+    header('Location:index.php');
+}
 include "layout/header.php";
 include "html/class_add.html";
 include "layout/rightside.php";

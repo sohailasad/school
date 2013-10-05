@@ -19,6 +19,9 @@ if (isset($_POST['login'])) {
             $message = "Email or password is invalid";
         }
     }
+ else {
+        $message = "Email or password is invalid";
+    }
 }
 if (isset($_SESSION['name'])) {
     header('Location:student_show.php');

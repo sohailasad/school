@@ -1,11 +1,11 @@
 <div style="float: left;">
     <form action="" method="post" enctype="multipart/form-data">
-        <table>
-            <tr><td>Roll No</td><td><input type="text" name="rollno" id="rollno"></td></tr>
+        <table width="330">
+            <tr><td width="98">Roll No</td><td width="220"><input type="text" name="rollno" id="rollno"></td></tr>
             <tr><td>
                     <label>Class ID</label></td>
                 <td>
-                    <select name="classID">
+                    <select name="classID" style="width: 148px;">
                         <option>Class Name</option>
                         <?php
                         echo $class;
@@ -16,7 +16,7 @@
                     <label>Date:</label></td><td><input type="text" name="hasDatepicker" id="datepicker"></td></tr>
             <tr><td>Status</td>
                 <td>
-                    <select name="status">
+                    <select name="status" style="width: 148px;">
                         <option>Present</option>
                         <option>Absent</option>
                         <option>Leave</option>

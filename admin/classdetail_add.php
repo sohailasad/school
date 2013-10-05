@@ -1,6 +1,7 @@
 <?php
 include "include/connection.php"; 
 session_start();
+if (isset($_SESSION['name'])) {
 if(isset($_POST['clsdetail'])){
 $stdntID=$_POST['stdntID'];
 $classID=$_POST['classID'];
@@ -28,6 +29,9 @@ while($row=mysql_fetch_array($query)){
 		$class .= "<option value=".$row['id']." >" .$row['class']."</option>";
 		}
 	
+}
+} else {
+    header('Location:index.php');
 }
 include "layout/header.php";
 include "html/classdetail_add.html";
